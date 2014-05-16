@@ -1,0 +1,15 @@
+" created for version 3.8.2
+
+" easier navigation
+nnoremap J <C-d>
+nnoremap K <C-u>
+nnoremap H :tabprevious<CR>
+nnoremap L :tabnext<CR>
+
+" i hate typing numbers
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+
+" for local stuff
+source! /home/esaieer/.vimperatorrc.local
+
+" vim: set ft=vimperator:
