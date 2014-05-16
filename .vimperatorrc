@@ -12,6 +12,9 @@ hi Hint::after -append font-size: 11px; font-family: Helvetica, Arial, sans-seri
 " use letters instead of numbers
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
 
+" disable large input hints
+set hintinputs=""
+
 " for local stuff
 source! /home/esaieer/.vimperatorrc.local
 
