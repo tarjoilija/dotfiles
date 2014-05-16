@@ -1,0 +1,21 @@
+[color]
+    ui = true
+[core]
+    pager = less -R
+    autocrlf = input
+[push]
+    default = upstream
+[alias]
+    alias = "!sh -c 'git config alias.\"$1\" \"$2\"' -"
+    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+    br = branch
+    ci = commit
+    co = checkout
+    cp = cherry-pick
+    dc = diff --cached
+    df = diff
+    lg = log --graph --pretty=format:'%Cred%h%Creset - %s %C(bold blue)<%an>%Creset' --abbrev-commit
+    rb = rebase
+    sb = show-branch
+    st = status
+    who = shortlog -s --
