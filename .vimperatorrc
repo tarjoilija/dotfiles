@@ -6,7 +6,10 @@ nnoremap K <C-u>
 nnoremap H :tabprevious<CR>
 nnoremap L :tabnext<CR>
 
-" i hate typing numbers
+" better highlighting for hints
+hi Hint::after -append font-size: 11px; font-family: Helvetica, Arial, sans-serif;
+
+" use letters instead of numbers
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
 
 " for local stuff
