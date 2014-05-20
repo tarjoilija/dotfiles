@@ -57,6 +57,7 @@ fi
 
 # some more ls aliases
 alias ll='ls -alF'
+alias fn='find . -name '
 
 # load site specific aliases
 if [ -f ~/.bash_aliases ]; then
