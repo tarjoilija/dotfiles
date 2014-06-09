@@ -18,12 +18,13 @@ function _prompt_command () {
     LAST_COMMAND=$?
 
     BLUE='\[\033[01;34m\]'
-    RED='\[\e[00;31m\]'
+    RED='\[\e[01;31m\]'
     GREEN='\[\e[01;32m\]'
     WHITE='\[\e[00;37m\]'
     RESET='\[\e[00m\]'
 
-    PS1="${BLUE}\w"
+    PS1="${RED}\u@\h "
+    PS1+="${BLUE}\w"
     PS1+="${GREEN}\$(__git_ps1 '(%s)') "
 
     if [ $LAST_COMMAND -eq 0 ]; then
