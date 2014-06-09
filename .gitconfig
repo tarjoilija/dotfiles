@@ -1,8 +1,8 @@
 [color]
     ui = true
 [core]
-    pager = less -R
     autocrlf = input
+    pager = less -+F -+X
 [push]
     default = upstream
 [alias]
