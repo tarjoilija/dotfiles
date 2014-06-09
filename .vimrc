@@ -112,3 +112,4 @@ set list
 
 " sig files are cpp
 au BufRead,BufNewFile *.sig set filetype=cpp
+autocmd FileType make setlocal noexpandtab
