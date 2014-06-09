@@ -69,3 +69,8 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# load git completion
+if [ -f ~/.bash_git ]; then
+    . ~/.bash_git
+fi
