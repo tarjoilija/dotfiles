@@ -33,6 +33,8 @@ set hlsearch
 set incsearch
 set showmatch
 set mat=2
+set ignorecase
+set smartcase
 
 " disable annoying swap file
 set nobackup
@@ -47,9 +49,11 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-" indentation, wrap
-set ai
-set si
+" indentation
+set autoindent
+set smartindent
+
+" wrap too long lines
 set wrap
 
 " mark the leader
@@ -78,13 +82,21 @@ nnoremap <Leader>0 :buf 10<CR>
 nnoremap <leader>u viwu
 nnoremap <leader>U viwU
 
-" surround word with parenthesis, brackets, quotation marks..
-nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
-nnoremap <leader>{ viw<esc>a}<esc>hbi{<esc>lel
-nnoremap <leader>( viw<esc>a)<esc>hbi(<esc>lel
-nnoremap <leader>[ viw<esc>a]<esc>hbi[<esc>lel
-nnoremap <leader>< viw<esc>a><esc>hbi<<esc>lel
+" surround word
+nnoremap <leader>" ciw"<C-r>""<esc>
+nnoremap <leader>' ciw'<C-r>"'<esc>
+nnoremap <leader>{ ciw{<C-r>"}<esc>
+nnoremap <leader>( ciw(<C-r>")<esc>
+nnoremap <leader>[ ciw[<C-r>"]<esc>
+nnoremap <leader>< ciw<<C-r>"><esc>
+
+" surround selection
+vnoremap <leader>" c"<C-r>""<esc>
+vnoremap <leader>' c'<C-r>"'<esc>
+vnoremap <leader>{ c{<C-r>"}<esc>
+vnoremap <leader>( c(<C-r>")<esc>
+vnoremap <leader>[ c[<C-r>"]<esc>
+vnoremap <leader>< c<<C-r>"><esc>
 
 " force hjkl
 map <up> <nop>
@@ -102,14 +114,17 @@ nnoremap L $
 nnoremap J <C-d>
 nnoremap K <C-u>
 
-" mark too long lines
-:au BufWinEnter * let w:m1=matchadd('ErrorMsg', '\%81v', -1)
-:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+" pasting with mouse
+set pastetoggle=<f5>
 
-" god I hate these
+" mark too long lines
+autocmd BufWinEnter * let w:m1=matchadd('ErrorMsg', '\%81v', -1)
+autocmd BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+
+" highlight whitespace
 set listchars=tab:>~,nbsp:_,trail:.
 set list
 
-" sig files are cpp
-au BufRead,BufNewFile *.sig set filetype=cpp
+" filetype stuff
+autocmd BufRead,BufNewFile *.sig set filetype=cpp
 autocmd FileType make setlocal noexpandtab
