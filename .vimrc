@@ -82,6 +82,9 @@ nnoremap <Leader>0 :buf 10<CR>
 nnoremap <leader>u viwu
 nnoremap <leader>U viwU
 
+nnoremap <leader>n :bn<CR>
+nnoremap <leader>p :bp<CR>
+
 " surround word
 nnoremap <leader>" ciw"<C-r>""<esc>
 nnoremap <leader>' ciw'<C-r>"'<esc>
