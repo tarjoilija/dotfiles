@@ -1,41 +1,53 @@
-*background: #181818
-*foreground: #c0c0c0
-*cursorColor: #93a1a1
+*foreground: #ffffff
+*background: #101010
+*cursorColor: white
+*cursorColor2: #aaaaaa
 
-!! black dark/light
-*color0: #121212
-*color8: #2e3436
+! black
+*color0:   #000000
+*color8:   #555753
 
-!! red dark/light
-*color1: #a35b66
-*color9: #ab6b74
+! red
+*color1:   #cc0000
+*color9:   #ef2929
 
-!! green dark/light
-*color2: #99ab6f
-*color10: #acb972
+! green
+*color2:   #4e9a06
+*color10:  #8ae234
 
-!! yellow dark/light
-*color3: #ca9733
-*color11: #ccaa69
+! yellow
+*color3:   #c4a000
+*color11:  #fce94f
 
-!! blue dark/light
-*color4: #495d6e
-*color12: #687987
+! blue
+*color4:   #3465a4
+*color12:  #729fcf
 
-!! magenta dark/light
-*color5: #825969
-*color13: #977381
+! magenta
+*color5:   #75507b
+*color13:  #ad7fa8
 
-!! cyan dark/light
-*color6: #839191
-*color14: #98a4a4
+! cyan
+*color6:   #06989a
+*color14:  #34e2e2
 
-!! white dark/light
-*color7: #e0e0e0
-color15: #e5e5e5
+! white
+*color7:   #d3d7cf
+*color15:  #eeeeec
 
-URxvt*font: xft:terminus:size=12
-URxvt*urlLauncher: firefox
+URxvt*font: xft:Terminus:style=Regular:pixelsize=14:antialias=false
+URxvt*fading: 20
+URxvt*termName: rxvt-256color
+URxvt*geometry: 120x40
+
+URxvt*saveLines: 10000
 URxvt*scrollBar: false
-URxvt*scrollBar_right: true
-URxvt*scrollColor: #000000
+
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+Xft.lcdfilter: ldcdefault
+Xft.hintstyle: hintslight
+
+URxvt.iso14755: off
+URxvt.iso14755_52: off
