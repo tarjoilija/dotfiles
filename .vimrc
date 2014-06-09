@@ -4,9 +4,8 @@
 " |- make it portable (themes and so on..)
 " '- keep it simple
 
-" folding.. should probably already remove these
+" folding
 set foldmethod=marker
-map <space> za
 
 " syntax highlighting
 syntax on
