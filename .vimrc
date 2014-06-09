@@ -67,6 +67,8 @@ nnoremap <leader>s :source $MYVIMRC<Cr>
 nnoremap <leader>w <C-w>
 
 " jump between buffers
+nnoremap <leader>n :bn<CR>
+nnoremap <leader>p :bp<CR>
 nnoremap <Leader>1 :buf 1<CR>
 nnoremap <Leader>2 :buf 2<CR>
 nnoremap <Leader>3 :buf 3<CR>
@@ -81,9 +83,6 @@ nnoremap <Leader>0 :buf 10<CR>
 " upper and lower case word
 nnoremap <leader>u viwu
 nnoremap <leader>U viwU
-
-nnoremap <leader>n :bn<CR>
-nnoremap <leader>p :bp<CR>
 
 " surround word
 nnoremap <leader>" ciw"<C-r>""<esc>
