@@ -16,6 +16,6 @@ set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set hintinputs=""
 
 " for local stuff
-source! /home/esaieer/.vimperatorrc.local
+source! ~/.vimperatorrc.local
 
 " vim: set ft=vimperator:
