@@ -8,6 +8,7 @@
 [alias]
     alias = "!sh -c 'git config alias.\"$1\" \"$2\"' -"
     aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+    amend = commit --amend
     br = branch
     ci = commit
     co = checkout
@@ -18,4 +19,4 @@
     rb = rebase
     sb = show-branch
     st = status
-    who = shortlog -s --
+    who = shortlog -ns --
