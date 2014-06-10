@@ -35,7 +35,7 @@ function _prompt_command () {
 
     PS1+="${RESET} "
 
-    # set title
+    # set title if supported
     case "$TERM" in
         xterm*|*rxvt*)
             PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
@@ -46,7 +46,7 @@ function _prompt_command () {
 }
 PROMPT_COMMAND='_prompt_command'
 
-# enable color support of ls and also add handy aliases
+# enable color support of ls and grep
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -60,9 +60,14 @@ fi
 alias ll='ls -alF'
 alias fn='find . -name '
 
-# load site specific aliases
+# load aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+# load local stuff
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
 fi
 
 # enable programmable completion
