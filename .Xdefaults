@@ -1,7 +1,7 @@
-*foreground: #ffffff
-*background: #101010
-*cursorColor: white
-*cursorColor2: #aaaaaa
+URxvt*foreground: #ffffff
+URxvt*background: #101010
+URxvt*cursorColor: white
+URxvt*cursorColor2: #aaaaaa
 
 ! black
 *color0:   #000000
@@ -37,7 +37,7 @@
 
 URxvt*font: xft:Terminus:style=Regular:pixelsize=14:antialias=false
 URxvt*fading: 20
-URxvt*termName: rxvt-256color
+! URxvt*termName: rxvt-256color
 URxvt*geometry: 120x40
 
 URxvt*saveLines: 10000
