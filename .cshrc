@@ -9,7 +9,8 @@ if (-r /usr/bin/dircolors) then
 endif
 
 # aliases
-alias ll 'ls -alF'
+alias ll 'ls -laF'
+alias l 'ls -lHF'
 alias fn 'find . -name '
 
 # env

@@ -57,7 +57,8 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -laF'
+alias l='ls -lHF'
 alias fn='find . -name '
 
 # load aliases
