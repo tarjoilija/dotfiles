@@ -27,6 +27,8 @@ function _prompt_command () {
     PS1+="${BLUE}\w"
     PS1+="${GREEN}\$(__git_ps1 '(%s)') "
 
+    [[ $(jobs -p) ]] && PS1+="${RED}\j "
+
     if [ $LAST_COMMAND -eq 0 ]; then
         PS1+="${WHITE}\$"
     else
