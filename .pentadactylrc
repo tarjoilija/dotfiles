@@ -10,6 +10,9 @@ nmap -b K <C-u>
 nmap -b H :tabprevious<CR>
 nmap -b L :tabnext<CR>
 
+nmap -b <C-i> L
+nmap -b <C-o> H
+
 " only show the tab bar if there are more than one tab
 set showtabline=multitab
 
@@ -21,7 +24,7 @@ set hlfind
 set findcase=smart
 
 " use listed characters to enumerate quickhint elements
-set hintkeys=asdfg;lkjh
+set hintkeys=hjklasdfgyuiopqwertnmzxcvb
 " display hints in uppercase
 highlight -a Hint text-transform: uppercase;
 
