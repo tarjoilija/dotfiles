@@ -1,0 +1,29 @@
+" use the best leader
+map <Space> <Leader>
+
+" open help in new tab
+set newtab+=help
+
+" easier navigation
+nmap -b J <C-d>
+nmap -b K <C-u>
+nmap -b H :tabprevious<CR>
+nmap -b L :tabnext<CR>
+
+" only show the tab bar if there are more than one tab
+set showtabline=multitab
+
+" find as you type
+set incfind
+" highlight the terms
+set hlfind
+" unless they contain upper-case letters
+set findcase=smart
+
+" use listed characters to enumerate quickhint elements
+set hintkeys=asdfg;lkjh
+" display hints in uppercase
+highlight -a Hint text-transform: uppercase;
+
+" shortcut for accessing subreddits
+cmap /r/ -builtin reddit.com/r/
