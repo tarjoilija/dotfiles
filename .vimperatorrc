@@ -16,7 +16,8 @@ set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set hintinputs=""
 
 " toggle navbar
-map <silent> <F2>
+map <silent> <F2> :js toggle_navbar() <CR>
+
 :js << EOF
 function toggle_navbar() {
     var nb = document.getElementById('nav-bar');
