@@ -7,11 +7,11 @@ set newtab+=help
 " easier navigation
 nmap -b J <C-d>
 nmap -b K <C-u>
-nmap -b H :tabprevious<CR>
-nmap -b L :tabnext<CR>
+nmap -b H gT
+nmap -b L gt
 
-nmap -b <C-i> L
 nmap -b <C-o> H
+nmap -b <C-i> L
 
 " only show the tab bar if there are more than one tab
 set showtabline=multitab
