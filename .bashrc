@@ -23,9 +23,9 @@ function _prompt_command () {
     WHITE='\[\e[00;37m\]'
     RESET='\[\e[00m\]'
 
-    PS1="${RED}\h "
+    PS1="${RED}\u@\h "
     PS1+="${BLUE}\w"
-    PS1+="${GREEN}\$(__git_ps1 '(%s)') "
+    PS1+="${GREEN}\$(__git_ps1 '(%s)')\n"
 
     [[ $(jobs -p) ]] && PS1+="${RED}\j "
 
