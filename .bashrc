@@ -1,6 +1,9 @@
 # exit if not interactive mode
 [ -z "$PS1" ] && return
 
+# ugly hack
+TERM="rxvt-unicode"
+
 # history settings
 shopt -s histappend
 HISTSIZE=2000
