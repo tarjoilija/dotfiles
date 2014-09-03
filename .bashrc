@@ -65,6 +65,7 @@ fi
 alias ll='ls -laF'
 alias l='ls -lHF'
 alias fn='find . -name '
+alias e='vim'
 
 # load aliases
 if [ -f ~/.bash_aliases ]; then
