@@ -68,6 +68,7 @@ alias l='ls -lHF'
 alias fn='find . -name '
 alias e='vim'
 alias c='clear'
+alias k='exit'
 
 # load aliases
 if [ -f ~/.bash_aliases ]; then
