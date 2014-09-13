@@ -3,6 +3,7 @@
 
 # ugly hack
 TERM="rxvt-unicode"
+EDITOR="vim"
 
 # history settings
 shopt -s histappend
