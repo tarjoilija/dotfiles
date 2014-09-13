@@ -20,3 +20,6 @@
     sb = show-branch
     st = status
     who = shortlog -ns --
+[user]
+	email = eero.saisa@awly.org
+	name = tarjoilija
