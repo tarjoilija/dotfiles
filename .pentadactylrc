@@ -27,6 +27,3 @@ set findcase=smart
 " set hintkeys=hjklasdfgyuiopqwertnmzxcvb
 " display hints in uppercase
 " highlight -a Hint text-transform: uppercase;
-
-" shortcut for accessing subreddits
-cmap /r/ -builtin reddit.com/r/
