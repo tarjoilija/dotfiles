@@ -27,3 +27,6 @@ set findcase=smart
 " set hintkeys=hjklasdfgyuiopqwertnmzxcvb
 " display hints in uppercase
 " highlight -a Hint text-transform: uppercase;
+
+" fix reddit hinting too many links
+set hinttags=:-moz-any-link,area,button,iframe,input:not([type=hidden]):not([disabled]),label[for],select,textarea,[onclick]:not(.thing),[onmouseover],[onmousedown],[onmouseup],[oncommand],[tabindex],[role=link],[role=button],[contenteditable=true]
