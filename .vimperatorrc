@@ -1,4 +1,4 @@
-" created for version 3.8.2
+" created for version 3.8.3
 
 " easier navigation
 nnoremap J <C-d>
@@ -6,14 +6,10 @@ nnoremap K <C-u>
 nnoremap H :tabprevious<CR>
 nnoremap L :tabnext<CR>
 
+set hinttags=//input[not(@type=\'hidden\')]\ |\ //xhtml:input[not(@type=\'hidden\')]\ |\ //a\ |\ //xhtml:a\ |\ //area\ |\ //xhtml:area\ |\ //iframe\ |\ //xhtml:iframe\ |\ //textarea\ |\ //xhtml:textarea\ |\ //button\ |\ //xhtml:button\ |\ //select\ |\ //xhtml:select\ |\ //*[@onclick[not(contains(@class,'thing'))]\ or\ @onmouseover\ or\ @onmousedown\ or\ @onmouseup\ or\ @oncommand\ or\ @role=\'link\'or\ @role=\'button\'\ or\ @role=\'checkbox\'\ or\ @role=\'combobox\'\ or\ @role=\'listbox\'\ or\ @role=\'listitem\'\ or\ @role=\'menuitem\'\ or\ @role=\'menuitemcheckbox\'\ or\ @role=\'menuitemradio\'\ or\ @role=\'option\'\ or\ @role=\'radio\'\ or\ @role=\'scrollbar\'\ or\ @role=\'slider\'\ or\ @role=\'spinbutton\'\ or\ @role=\'tab\'\ or\ @role=\'textbox\'\ or\ @role=\'treeitem\'\ or\ @tabindex]
+
 " better highlighting for hints
 hi Hint::after -append font-size: 11px; font-family: Helvetica, Arial, sans-serif;
-
-" use letters instead of numbers
-set hintchars=hjklasdfgyuiopqwertnmzxcvb
-
-" disable large input hints
-set hintinputs=""
 
 " toggle navbar
 map <silent> <F2> :js toggle_navbar() <CR>
@@ -26,7 +22,6 @@ function toggle_navbar() {
     nb.style.visibility = (nb.style.visibility == '') ? 'collapse' : '';
     nb.style.overflow = (nb.style.height == '') ? '' : 'hidden';
 }
-
 toggle_navbar();
 EOF
 
