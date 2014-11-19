@@ -89,3 +89,8 @@ fi
 if [ -f ~/.bash_git ]; then
     . ~/.bash_git
 fi
+
+# set path
+if [ -d ~/bin ]; then
+    PATH="~/bin:${PATH}"
+fi
