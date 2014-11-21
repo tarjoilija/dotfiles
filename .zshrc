@@ -5,22 +5,22 @@ export EDITOR=vim
 # load zgen
 source "${HOME}/proj/zgen/zgen.zsh"
 
-# check if there's an init script
-if [[ ! -f "${ZGEN_INIT}" ]]; then
-    echo "no init script found; creating one"
+# check if there's no init script
+if ! zgen saved; then
+    echo "creating a zgen save"
 
     zgen oh-my-zsh
 
     # plugins
-    zgen load robbyrussell/oh-my-zsh plugins/git/git.plugin.zsh
-    zgen load robbyrussell/oh-my-zsh plugins/npm/npm.plugin.zsh
-    zgen load robbyrussell/oh-my-zsh plugins/pip/pip.plugin.zsh
-    zgen load robbyrussell/oh-my-zsh plugins/command-not-found/command-not-found.plugin.zsh
-    zgen load robbyrussell/oh-my-zsh plugins/sudo/sudo.plugin.zsh
-    zgen load zsh-users/zsh-syntax-highlighting zsh-syntax-highlighting.zsh
+    zgen oh-my-zsh plugins/git
+    zgen oh-my-zsh plugins/npm
+    zgen oh-my-zsh plugins/pip
+    zgen oh-my-zsh plugins/command-not-found
+    zgen oh-my-zsh plugins/sudo
+    zgen load zsh-users/zsh-syntax-highlighting
 
     # theme
-    zgen load robbyrussell/oh-my-zsh themes/arrow.zsh-theme
+    zgen oh-my-zsh themes/arrow
 
     # save all to init script
     zgen save
