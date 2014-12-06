@@ -4,13 +4,28 @@
 " |- make it portable (themes and so on..)
 " '- keep it simple
 
+" setup Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'chriskempson/base16-vim'
+
+call vundle#end()
+filetype plugin indent on
+
 " folding
 set foldmethod=marker
 
 " syntax highlighting
 syntax on
 set t_Co=256
-colorscheme desert
+set background=dark
+colorscheme base16-bright
 
 " basic settins
 set encoding=utf8
