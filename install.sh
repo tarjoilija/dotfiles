@@ -29,6 +29,7 @@ dotfiles=(
     .vimperatorrc
     .vimrc
     .Xdefaults
+    .Xresources
     .Xmodmap
     .zshrc
 )
