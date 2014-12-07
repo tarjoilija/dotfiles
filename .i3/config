@@ -57,8 +57,6 @@ bindsym Mod4+v split v
 bindsym Mod4+f fullscreen
 
 # change layout
-bindsym Mod4+s layout stacking
-bindsym Mod4+w layout tabbed
 bindsym Mod4+e layout toggle split
 
 # toggle tiling / floating
@@ -71,11 +69,11 @@ bindsym Mod4+space focus mode_toggle
 bindsym Mod4+a focus parent
 
 # move the currently focused window to the scratchpad
-bindsym Mod4+Shift+minus move scratchpad
+bindsym Mod4+Shift+s move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
-bindsym Mod4+minus scratchpad show
+bindsym Mod4+s scratchpad show
 
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '5%+'"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '5%-'"
@@ -139,5 +137,5 @@ bindsym Mod4+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command ~/.i3/bin/conky-wrapper
+        status_command ~/.i3/status.py
 }
