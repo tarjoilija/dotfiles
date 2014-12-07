@@ -15,7 +15,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'chriskempson/base16-vim'
-Plugin 'bling/vim-airline'
+" Plugin 'bling/vim-airline'
 Plugin 'koron/nyancat-vim'
 
 call vundle#end()
@@ -139,19 +139,18 @@ set pastetoggle=<f5>
 " add statusline
 set noruler
 set laststatus=2
-set noshowmode
 
-" set statusline=
-" set statusline+=%-2.2n\                      " buffer number
-" set statusline+=%f\                          " file name
-" set statusline+=%h%m%r%w                     " flags
-" set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
-" set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
-" set statusline+=%{&fileformat}]              " file format
-" set statusline+=%=                           " right align
-" set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
-" set statusline+=%b,0x%-8B\                   " current char
-" set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
+set statusline=
+set statusline+=%-2.2n\                      " buffer number
+set statusline+=%f\                          " file name
+set statusline+=%h%m%r%w                     " flags
+set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
+set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
+set statusline+=%{&fileformat}]              " file format
+set statusline+=%=                           " right align
+set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
+set statusline+=%b,0x%-8B\                   " current char
+set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 
 " mark too long lines
 autocmd BufWinEnter * let w:m1=matchadd('ErrorMsg', '\%81v', -1)
