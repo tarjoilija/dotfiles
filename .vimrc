@@ -17,6 +17,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'chriskempson/base16-vim'
 " Plugin 'bling/vim-airline'
 Plugin 'koron/nyancat-vim'
+Plugin 'PotatoesMaster/i3-vim-syntax'
 
 call vundle#end()
 filetype plugin indent on
