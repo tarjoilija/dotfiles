@@ -36,12 +36,12 @@ status.register("battery",
 status.register("network_traffic",
     interface="usb0",
     hide_down=True,
-    format="↗{bytes_sent:3.0f}kB/s ↘{bytes_recv:3.0f}kB/s",)
+    format="u{bytes_sent:3.0f} d{bytes_recv:3.0f}",)
 
 status.register("network_traffic",
     interface="eth1",
     hide_down=True,
-    format="↗{bytes_sent:3.0f}kB/s ↘{bytes_recv:3.0f}kB/s",)
+    format="u{bytes_sent:3.0f} d{bytes_recv:3.0f}",)
 
 status.register("network",
     interface="usb0",
@@ -63,7 +63,8 @@ status.register("wireless",
     format_up="{essid} {quality:03.0f}%",)
 
 status.register("bitcoin",
-    color="#be643c")
+    color="#be643c",
+    format="btc {last_price:.0f}")
 
 status.register("disk",
     path="/",
