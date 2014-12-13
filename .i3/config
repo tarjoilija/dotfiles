@@ -3,6 +3,9 @@
 # font
 font pango:Terminus 8
 
+# border
+for_window [class="URxvt"] border 1pixel
+
 # movement keys
 set $up k
 set $down j
@@ -37,6 +40,8 @@ bindsym Mod4+Left focus left
 bindsym Mod4+Down focus down
 bindsym Mod4+Up focus up
 bindsym Mod4+Right focus right
+
+bindsym Mod4+u [urgent=latest] focus
 
 # move focused window
 bindsym Mod4+Shift+$left move left
@@ -80,6 +85,9 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '5%-'"
 bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
 
 # switch to workspace
+bindsym Mod4+Tab workspace next
+bindsym Mod4+Shift+Tab workspace prev
+
 bindsym Mod4+1 workspace 1
 bindsym Mod4+2 workspace 2
 bindsym Mod4+3 workspace 3
@@ -139,3 +147,5 @@ bindsym Mod4+r mode "resize"
 bar {
         status_command ~/.i3/status.py
 }
+
+# vim:filetype=i3
