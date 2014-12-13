@@ -6,25 +6,27 @@ from i3pystatus import Status
 
 status = Status(standalone=True)
 
-# Displays clock like this:
-# Tue 30 Jul 11:59:46 PM KW31
-#                          ^-- calendar week
 status.register("clock",
-    format="%a %-d %b %X KW%V",)
+    format="%a %-d %b %X",
+    color="#6fb3d2")
 
-# Shows the average load of the last minute and the last 5 minutes
-# (the default value for format is used)
-status.register("load")
+status.register("mem",
+    color="#fda331",
+    warn_color="#fda331",
+    alert_color="#fb0120",
+    format="mem {percent_used_mem:.0f}%")
 
-# Shows your CPU temperature, if you have a Intel CPU
-status.register("temp",
-    format="{temp:.0f}°C",)
+status.register("load",
+    format="cpu {avg1} {avg5}",
+    color="#a1c659",
+    critical_color="#fb0120")
 
 status.register("battery",
     format="{status}/{percentage_design:.0f}% {consumption:.2f}W {remaining:%E%hh:%Mm}",
     battery_ident="BAT1",
     alert=True,
     alert_percentage=5,
+    not_present_text="",
     status={
         "DIS": "↓",
         "CHR": "↑",
@@ -36,35 +38,44 @@ status.register("network_traffic",
     hide_down=True,
     format="↗{bytes_sent:3.0f}kB/s ↘{bytes_recv:3.0f}kB/s",)
 
+status.register("network_traffic",
+    interface="eth1",
+    hide_down=True,
+    format="↗{bytes_sent:3.0f}kB/s ↘{bytes_recv:3.0f}kB/s",)
+
 status.register("network",
     interface="usb0",
-    format_up="{v4}",
+    format_up="{interface} {v4}",
+    format_down="",
+    color_up="#a1c659",
     unknown_up=True)
 
+status.register("network",
+    interface="eth1",
+    format_up="{interface} {v4}",
+    format_down="",
+    color_up="#a1c659",
+    unknown_up=True)
 
-# Has all the options of the normal network and adds some wireless specific things
-# like quality and network names.
-#
-# Note: requires both netifaces and basiciw
 status.register("wireless",
     interface="wlan0",
+    format_down="",
     format_up="{essid} {quality:03.0f}%",)
 
-status.register("bitcoin")
+status.register("bitcoin",
+    color="#be643c")
 
-# Shows disk usage of /
-# Format:
-# 42/128G [86G]
 status.register("disk",
     path="/",
+    color="#76c7b7",
     format="{avail}G",)
 
-# Shows pulseaudio default sink volume
-#
-# Note: requires libpulseaudio from PyPI
 status.register("pulseaudio",
-    format="♪{volume}",)
+    format="♪{volume}",
+    color_unmuted="#a1c659",
+    color_muted="#fb0120")
 
-status.register("now_playing")
+status.register("now_playing",
+    color="#fda331")
 
 status.run()
