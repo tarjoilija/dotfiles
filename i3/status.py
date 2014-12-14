@@ -40,12 +40,12 @@ status.register("battery",
 status.register("network_traffic",
     interface="usb0",
     hide_down=True,
-    format="u{bytes_sent:3.0f} d{bytes_recv:3.0f}",)
+    format="d{bytes_recv:4.0f} u{bytes_sent:4.0f}",)
 
 status.register("network_traffic",
     interface="eth1",
     hide_down=True,
-    format="u{bytes_sent:3.0f} d{bytes_recv:3.0f}",)
+    format="d{bytes_recv:4.0f} u{bytes_sent:4.0f}",)
 
 status.register("network",
     interface="usb0",
