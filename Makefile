@@ -1,6 +1,6 @@
 # dotfiles installation
 
-PWD="$(shell pwd)"
+PWD=$(shell pwd)
 CONFIG=~/.config
 
 install-vim:
@@ -36,9 +36,12 @@ install-csh:
 	ln -sf $(PWD)/csh/cshrc ~/.cshrc
 
 install-vimperator:
-	rm -rf ~/.vimperator
-	mkdir ~/.vimperator
+	test -d ~/.vimperator || mkdir ~/.vimperator
 	ln -sf $(PWD)/vimperator/vimperatorrc ~/.vimperatorrc
+
+install-pentadactyl:
+	test -d ~/.pentadactyl || mkdir ~/.pentadactyl
+	ln -sf $(PWD)/pentadactyl/pentadactylrc ~/.pentadactylrc
 
 install-tmux:
 	ln -sf $(PWD)/tmux/tmux.conf ~/.tmux.conf
