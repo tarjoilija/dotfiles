@@ -13,10 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'chriskempson/base16-vim'
-" Plugin 'bling/vim-airline'
-Plugin 'koron/nyancat-vim'
 Plugin 'PotatoesMaster/i3-vim-syntax'
 
 call vundle#end()
