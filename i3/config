@@ -23,6 +23,7 @@ floating_modifier $m
 
 # lock
 bindsym $m+Delete exec slock
+bindsym $m+Shift+Delete exec scrot_lock
 
 # terminal
 bindsym $m+Return exec urxvt
