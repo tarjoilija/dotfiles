@@ -30,6 +30,7 @@ install-bash:
 install-misc:
 	ln -sf $(PWD)/Xdefaults ~/.Xdefaults
 	ln -sf $(PWD)/Xmodmap ~/.Xmodmap
+	ln -sf $(PWD)/inputrc ~/.inputrc
 
 install-csh:
 	ln -sf $(PWD)/csh/cshrc ~/.cshrc
