@@ -31,7 +31,11 @@ status.register("battery",
         "DIS": "↓",
         "CHR": "↑",
         "FULL": "=",
-    },)
+    },
+    full_color="#6fb3d2",
+    charging_color="#6fb3d2",
+    critical_color="#fb0120",
+    color="#fda331")
 
 status.register("network_traffic",
     interface="usb0",
