@@ -39,3 +39,6 @@ install-vimperator:
 	rm -rf ~/.vimperator
 	mkdir ~/.vimperator
 	ln -sf $(PWD)/vimperator/vimperatorrc ~/.vimperatorrc
+
+install-tmux:
+	ln -sf $(PWD)/tmux/tmux.conf ~/.tmux.conf
