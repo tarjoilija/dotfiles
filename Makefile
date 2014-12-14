@@ -23,3 +23,8 @@ install-zsh:
 	ln -sf $(PWD)/zsh/zshrc ~/.zshrc
 	git clone https://github.com/tarjoilija/zgen ~/.zgen
 	zsh -i -c exit
+
+install-bash:
+	rm -rf ~/.bashrc ~/.bash_git
+	ln -sf $(PWD)/bash/bashrc ~/.bashrc
+	ln -sf $(PWD)/bash/bash_git ~/.bash_git
