@@ -33,3 +33,8 @@ install-misc:
 
 install-csh:
 	ln -sf $(PWD)/csh/cshrc ~/.cshrc
+
+install-vimperator:
+	rm -rf ~/.vimperator
+	mkdir ~/.vimperator
+	ln -sf $(PWD)/vimperator/vimperatorrc ~/.vimperatorrc
