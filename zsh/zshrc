@@ -3,7 +3,7 @@ export PATH="~/bin:${PATH}"
 export EDITOR=vim
 
 # load zgen
-source "${HOME}/proj/zgen/zgen.zsh"
+source "${HOME}/.zgen/zgen.zsh"
 
 # check if there's no init script
 if ! zgen saved; then

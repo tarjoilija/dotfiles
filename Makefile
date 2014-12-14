@@ -17,3 +17,9 @@ install-i3:
 install-git:
 	rm -rf ~/.gitconfig
 	ln -sf $(PWD)/git/gitconfig ~/.gitconfig
+
+install-zsh:
+	rm -rf ~/.zshrc ~/.zgen
+	ln -sf $(PWD)/zsh/zshrc ~/.zshrc
+	git clone https://github.com/tarjoilija/zgen ~/.zgen
+	zsh -i -c exit
