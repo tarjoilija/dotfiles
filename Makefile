@@ -49,3 +49,7 @@ install-pentadactyl:
 
 install-tmux:
 	ln -sf "$(PWD)/tmux/tmux.conf" ~/.tmux.conf
+
+install-bin:
+	test -d ~/bin || mkdir ~/bin
+	ln -sf "$(PWD)/bin/scrot_lock" ~/bin
