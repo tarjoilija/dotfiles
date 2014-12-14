@@ -32,9 +32,9 @@ install-bash:
 	ln -sf "$(PWD)/bash/bash_git" ~/.bash_git
 
 install-misc:
-	ln -sf "$(PWD)/Xdefaults" ~/.Xdefaults
-	ln -sf "$(PWD)/Xmodmap" ~/.Xmodmap
-	ln -sf "$(PWD)/inputrc" ~/.inputrc
+	ln -sf "$(PWD)/misc/Xdefaults" ~/.Xdefaults
+	ln -sf "$(PWD)/misc/Xmodmap" ~/.Xmodmap
+	ln -sf "$(PWD)/misc/inputrc" ~/.inputrc
 
 install-csh:
 	ln -sf "$(PWD)/csh/cshrc" ~/.cshrc
