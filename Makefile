@@ -35,6 +35,7 @@ install-misc:
 	ln -sf "$(PWD)/misc/Xdefaults" ~/.Xdefaults
 	ln -sf "$(PWD)/misc/Xmodmap" ~/.Xmodmap
 	ln -sf "$(PWD)/misc/inputrc" ~/.inputrc
+	ln -sf "$(PWD)/misc/xinitrc" ~/.xinitrc
 
 install-csh:
 	ln -sf "$(PWD)/csh/cshrc" ~/.cshrc
