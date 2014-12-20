@@ -5,7 +5,7 @@ PWD=$(shell pwd)
 install: install-vim install-i3 install-git install-zsh \
 		 install-bash install-misc install-csh \
 		 install-vimperator install-pentadactyl \
-		 install-tmux
+		 install-tmux install-bin
 
 install-vim:
 	rm -rf ~/.vim
