@@ -13,4 +13,8 @@ if [ -s ~/.Xmodmap ]; then
     xmodmap ~/.Xmodmap
 fi
 
+if [ -s ~/.fehbg ]; then
+    sh ~/.fehbg
+fi
+
 exec i3
