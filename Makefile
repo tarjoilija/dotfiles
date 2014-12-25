@@ -22,9 +22,10 @@ install-git:
 	ln -sf "$(PWD)/git/gitconfig" ~/.gitconfig
 
 install-zsh:
-	rm -rf ~/.zgen
 	ln -sf "$(PWD)/zsh/zshrc" ~/.zshrc
-	git clone https://github.com/tarjoilija/zgen ~/.zgen
+	ln -sf "$(PWD)/zsh/zshenv" ~/.zshenv
+	test -d ~/proj || mkdir -p ~/proj
+	test -d ~/proj/zgen || git clone https://github.com/tarjoilija/zgen ~/proj/zgen
 	zsh -i -c exit
 
 install-bash:
