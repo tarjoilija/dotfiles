@@ -28,4 +28,6 @@ EOF
 " for local stuff
 source! ~/.vimperatorrc.local
 
+set gui=tabs
+
 " vim: set ft=vimperator:
