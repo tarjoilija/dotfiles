@@ -16,6 +16,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'PotatoesMaster/i3-vim-syntax'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on
@@ -75,6 +76,8 @@ set wrap
 " mark the leader
 nnoremap <space> <NOP>
 let mapleader = " "
+
+nnoremap <leader>t :NERDTree<CR>
 
 " source .vimrc
 nnoremap <leader>s :source $MYVIMRC<Cr>
