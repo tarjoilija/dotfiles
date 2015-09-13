@@ -55,3 +55,4 @@ install-tmux:
 install-bin:
 	test -d ~/bin || mkdir ~/bin
 	ln -sf "$(PWD)/bin/scrot_lock" ~/bin
+	ln -sf "$(PWD)/bin/git-remote-hg" ~/bin
