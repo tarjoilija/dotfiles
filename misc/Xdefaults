@@ -35,3 +35,5 @@ Xft.hintstyle: hintslight
 
 URxvt.iso14755: off
 URxvt.iso14755_52: off
+
+URxvt.urgentOnBell: true
