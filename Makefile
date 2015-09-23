@@ -7,6 +7,10 @@ install: install-vim install-i3 install-git install-zsh \
 		 install-vimperator install-pentadactyl \
 		 install-tmux install-bin
 
+install-server: install-vim install-git install-zsh \
+		install-bash install-csh install-tmux \
+		install-bin
+
 install-vim:
 	rm -rf ~/.vim
 	ln -sf "$(PWD)/vim/vimrc" ~/.vimrc
