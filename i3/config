@@ -5,6 +5,7 @@ font pango:Terminus 8
 
 # border
 for_window [class="URxvt"] border 1pixel
+for_window [class="Firefox"] border 1pixel
 
 # mod key
 set $m Mod4

@@ -47,6 +47,11 @@ status.register("network_traffic",
     hide_down=True,
     format="d{bytes_recv:4.0f} u{bytes_sent:4.0f}",)
 
+status.register("network_traffic",
+    interface="wlan0",
+    hide_down=True,
+    format="d{bytes_recv:4.0f} u{bytes_sent:4.0f}",)
+
 status.register("network",
     interface="usb0",
     format_up="{interface} {v4}",
@@ -62,9 +67,10 @@ status.register("network",
     unknown_up=True)
 
 status.register("wireless",
+    color_up="#a1c659",
     interface="wlan0",
     format_down="",
-    format_up="{essid} {quality:03.0f}%",)
+    format_up="{essid} {quality:.0f}%",)
 
 status.register("bitcoin",
     color="#be643c",
