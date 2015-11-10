@@ -26,6 +26,9 @@ floating_modifier $m
 bindsym $m+Delete exec slock
 bindsym $m+Shift+Delete exec scrot_lock
 
+# printscreen
+bindsym --release Print exec scrot -s -e 'mv $f ~/shots && echo \$HOME/shots/$f | xclip'
+
 # terminal
 bindsym $m+Return exec urxvt
 
