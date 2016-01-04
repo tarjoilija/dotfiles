@@ -4,8 +4,7 @@ PWD=$(shell pwd)
 
 install: install-vim install-i3 install-git install-zsh \
 		 install-bash install-misc install-csh \
-		 install-vimperator install-pentadactyl \
-		 install-tmux install-bin
+		 install-vimperator install-tmux install-bin
 
 install-server: install-vim install-git install-zsh \
 		install-bash install-csh install-tmux \
@@ -48,10 +47,6 @@ install-csh:
 install-vimperator:
 	test -d ~/.vimperator || mkdir ~/.vimperator
 	ln -sf "$(PWD)/vimperator/vimperatorrc" ~/.vimperatorrc
-
-install-pentadactyl:
-	test -d ~/.pentadactyl || mkdir ~/.pentadactyl
-	ln -sf "$(PWD)/pentadactyl/pentadactylrc" ~/.pentadactylrc
 
 install-tmux:
 	ln -sf "$(PWD)/tmux/tmux.conf" ~/.tmux.conf
