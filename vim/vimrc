@@ -119,15 +119,15 @@ vnoremap <leader>( c(<C-r>")<esc>
 vnoremap <leader>[ c[<C-r>"]<esc>
 vnoremap <leader>< c<<C-r>"><esc>
 
-" force hjkl
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+" don't force hjkl
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>
 
 " easier navigation
 nnoremap H 0
