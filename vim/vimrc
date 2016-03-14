@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'chriskempson/base16-vim'
@@ -120,8 +121,6 @@ vnoremap <leader>[ c[<C-r>"]<esc>
 vnoremap <leader>< c<<C-r>"><esc>
 
 " easier navigation
-nnoremap H 0
-nnoremap L $
 nnoremap J <C-d>
 nnoremap K <C-u>
 
