@@ -28,3 +28,8 @@ if ! zgen saved; then
     # save all to init script
     zgen save
 fi
+
+# load aliases
+if [ -f ~/.zsh_aliases ]; then
+    source ~/.zsh_aliases
+fi
