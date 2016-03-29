@@ -1,0 +1,39 @@
+SHELL
+    git
+    htop
+    nmap
+    ranger
+    tmux
+    vim
+    weechat
+    zsh
+    *pacaur
+
+DESKTOP
+    dmenu
+    dunst
+    i3-wm
+    scrot
+    slock
+    xbindkeys
+    *gtk-theme-arc
+    *i3pystatus
+    *python-basiciw
+    *python-colour
+
+APPLICATIONS
+    firefox
+    pavucontrol
+    rxvt-unicode
+    thunderbird
+    transmission-gtk
+    vlc
+    wireshark-gtk
+    *spotify
+    *telegram-desktop-dev
+    *vimperator-git
+
+FONTS
+    terminus-font
+    ttf-dejavu
+    ttf-liberation
