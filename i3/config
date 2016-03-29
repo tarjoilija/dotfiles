@@ -4,8 +4,8 @@
 font pango:Terminus 8
 
 # border
-for_window [class="URxvt"] border 1pixel
-for_window [class="Firefox"] border 1pixel
+new_window pixel 1
+new_float normal 1
 
 # mod key
 set $m Mod4
