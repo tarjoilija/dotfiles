@@ -67,6 +67,9 @@ bindsym $m+Shift+Down move down
 bindsym $m+Shift+Up move up
 bindsym $m+Shift+Right move right
 
+# move focused workspace
+bindsym $m+x move workspace to output right
+
 # split
 bindsym $m+b split h
 bindsym $m+v split v
