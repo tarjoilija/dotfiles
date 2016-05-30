@@ -32,3 +32,11 @@ fi
 if [ -f ~/.zsh_aliases ]; then
     source ~/.zsh_aliases
 fi
+
+# startx on tty1
+if [[ "$(tty)" == '/dev/tty1' ]]; then
+    exec startx
+
+    # exit after xserver
+    exit
+fi
