@@ -38,11 +38,6 @@ bindsym $m+Shift+c kill
 # dmenu
 bindsym $m+d exec i3-dmenu-desktop
 
-# application focus
-bindsym $m+s [class="Spotify"] focus
-bindsym $m+e [class="Thunderbird"] focus
-bindsym $m+t [class="Telegram"] focus
-
 # change focus
 bindsym $m+$left focus left
 bindsym $m+$down focus down
