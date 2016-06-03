@@ -21,9 +21,4 @@ if [ -s ~/.fehbg ]; then
     sh ~/.fehbg
 fi
 
-# autostart mpd
-if [ -s ~/.config/mpd/mpd.conf ]; then
-    mpd
-fi
-
 exec i3
