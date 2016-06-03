@@ -84,7 +84,7 @@ status.register("pulseaudio",
     color_unmuted=COLOR_GREEN,
     color_muted=COLOR_RED)
 
-status.register("now_playing",
+status.register("mpd",
     color=COLOR_YELLOW)
 # }}}
 
