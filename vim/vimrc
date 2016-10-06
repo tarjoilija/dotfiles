@@ -85,12 +85,18 @@ nnoremap <leader>t :NERDTree<CR>
 " source .vimrc
 nnoremap <leader>s :source $MYVIMRC<Cr>
 
+" split
+nnoremap <leader>v :split<CR>
+nnoremap <leader>b :vsplit<CR>
+
 " <C-w> sucks
 nnoremap <leader>w <C-w>
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
 
 " jump between buffers
-nnoremap <leader>n :bn<CR>
-nnoremap <leader>p :bp<CR>
 nnoremap <Leader>1 :buf 1<CR>
 nnoremap <Leader>2 :buf 2<CR>
 nnoremap <Leader>3 :buf 3<CR>
