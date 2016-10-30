@@ -132,6 +132,13 @@ vnoremap <leader>< c<<C-r>"><esc>
 nnoremap J <C-d>
 nnoremap K <C-u>
 
+" make stuff
+nnoremap <leader>mm :make<CR>
+nnoremap <leader>ma :make all<CR>
+nnoremap <leader>mc :make clean<CR>
+nnoremap <leader>mm :make run-main<CR>
+nnoremap <leader>mt :make run-test<CR>
+
 " pasting with mouse
 set pastetoggle=<f5>
 
