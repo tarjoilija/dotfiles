@@ -31,7 +31,7 @@ bindsym $m+Delete exec slock
 bindsym $m+Shift+Delete exec scrot_lock
 
 # printscreen
-bindsym --release Print exec scrot -s -e 'mv $f ~/shots && echo \$HOME/shots/$f | xclip'
+bindsym --release Print exec scrot -s -e 'mv $f ~/shots && echo file://\$HOME/shots/$f | xclip -selection clipboard -t text/uri-list'
 
 # terminal
 bindsym $m+Return exec urxvt
@@ -86,6 +86,7 @@ bindsym $m+space focus mode_toggle
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '5%+'"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '5%-'"
 bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
+
 
 # switch to workspace
 bindsym $m+Tab workspace next
@@ -151,5 +152,18 @@ bar {
         status_command ~/.i3/status.py
         mode hide
 }
+
+# calculator
+bindsym XF86Calculator exec "urxvt -name Calculator -e python -q -i -c \\"import math\\""
+for_window [class="URxvt" instance="Calculator"] floating enable
+
+# mpd binds
+bindsym XF86AudioPlay exec "mpc toggle"
+bindsym XF86AudioStop exec "mpc stop"
+bindsym XF86AudioPrev exec "mpc prev"
+bindsym XF86AudioNext exec "mpc next"
+
+# application specific stuff
+assign [class="^Steam$"] 3
 
 # vim:filetype=i3
