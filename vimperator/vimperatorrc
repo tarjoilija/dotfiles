@@ -30,10 +30,6 @@ source! ~/.vimperatorrc.local
 
 set gui=tabs
 
-" vim: set ft=vimperator:
-
-command -nargs=0 kiltaplay :execute "!kilta_play \"" + content.location.href + "\""
-
 :js << EOF
 function toggle_bottombar(p) {
     var bb = document.getElementById('liberator-bottombar');
