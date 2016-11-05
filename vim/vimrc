@@ -19,7 +19,6 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'PotatoesMaster/i3-vim-syntax'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'vimwiki/vimwiki'
-Plugin 'mhinz/vim-startify'
 
 call vundle#end()
 filetype plugin indent on
