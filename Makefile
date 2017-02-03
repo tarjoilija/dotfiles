@@ -40,6 +40,7 @@ install-misc:
 	ln -sf "$(PWD)/misc/Xmodmap" ~/.Xmodmap
 	ln -sf "$(PWD)/misc/inputrc" ~/.inputrc
 	ln -sf "$(PWD)/misc/xinitrc" ~/.xinitrc
+	ln -sf "$(PWD)/misc/sqliterc" ~/.sqliterc
 
 install-csh:
 	ln -sf "$(PWD)/csh/cshrc" ~/.cshrc
