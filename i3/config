@@ -41,6 +41,7 @@ bindsym $m+Shift+c kill
 
 # dmenu
 bindsym $m+d exec i3-dmenu-desktop
+bindsym $m+a exec passmenu
 
 # change focus
 bindsym $m+$left focus left
