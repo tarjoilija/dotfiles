@@ -23,6 +23,7 @@ if ! zgen saved; then
 
     # completion
     zgen load zsh-users/zsh-completions src
+    zgen load /usr/share/zsh/site-functions
 
     # save all to init script
     zgen save
