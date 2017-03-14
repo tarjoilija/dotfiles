@@ -1,7 +1,7 @@
 # i3 config file (v4)
 
 # font
-font pango:Terminus 8
+font pango:xos4 Terminus 8
 
 # border
 new_window pixel 1

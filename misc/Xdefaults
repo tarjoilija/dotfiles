@@ -19,7 +19,7 @@
 *.color14:      #be643c
 *.color15:      #ffffff
 
-URxvt*font: xft:Terminus:style=Regular:pixelsize=14:antialias=false
+URxvt*font: xft:xos4 Terminus:style=Regular:pixelsize=14:antialias=false
 URxvt*fading: 20
 ! URxvt*termName: rxvt-256color
 URxvt*geometry: 120x40
